@@ -1,0 +1,39 @@
+<div class="container">
+    <form>
+    <div class="ui-g">
+  
+      <div class="ui-g-12">
+        <h1>Novo Serviço</h1>
+      </div>
+
+        <div class="ui-g-12 ui-fluid">
+            <label>Descrição</label>
+            <p-calendar dateFormat="dd/mm/yy"></p-calendar>
+        </div>
+
+        <div class="ui-g-12 ui-md-6 ui-fluid">
+            <label>Status Serviço</label>
+            <p-dropdown [options]="tipo" placeholder="Pago"></p-dropdown>
+          </div>
+
+        <div class="ui-g-12 ui-md-6 ui-fluid">
+            <label>Valor</label>
+            <input pInputText type="text" placeholder="0,00" currencyMask [options]="{ prefix: '', thousands: '.', decimal: ',', allowNegative: false}">
+        </div>
+              
+      <div class="ui-g-12 ui-md-1">
+            <button pButton type="submit" label="Salvar"></button>
+          </div> 
+
+      <div class="ui-g-11">
+        <button pButton type="button" label="Novo" class="ui-button-info" ></button>
+        <a href="javascript:;" class="a-espaco" routerLink="/servicos">Voltar para a pesquisa</a>
+      </div>
+      
+      </div>
+    </form>
+  </div>
+
+
+
+

@@ -1,0 +1,62 @@
+<div class="container">
+        <form>
+        <div class="ui-g">
+      
+          <div class="ui-g-12">
+            <h1>Nova Reserva</h1>
+          </div>
+    
+          <div class="ui-g-12 ui-md-6 ui-fluid">
+            <label>Hóspede</label>
+            <p-dropdown [options]="tipo" placeholder="Flávio dos Santos Diniz"></p-dropdown>
+          </div>
+    
+            <div class="ui-g-12 ui-md-5 ui-fluid">
+                <label>Quarto</label>
+                <p-dropdown [options]="tipo" placeholder="104"></p-dropdown>
+            </div>
+
+            <div class="ui-g-12 ui-md-1 ui-fluid">
+                    <label>Adicionar</label>
+                    <button pButton type="submit" label="+"></button>
+                </div>
+    
+            <div class="ui-g-6 ui-md-4 ui-fluid">
+                <label>Data Entrada</label>
+                <p-calendar dateFormat="dd/mm/yy"></p-calendar>
+            </div>
+    
+            <div class="ui-g-6 ui-md-4 ui-fluid">
+                <label>Data Saída</label>
+                <p-calendar dateFormat="dd/mm/yy"></p-calendar>
+            </div>
+    
+            <div class="ui-g-12 ui-md-4 ui-fluid">
+                <label>Valor</label>
+                <input pInputText type="text" placeholder="0,00" currencyMask [options]="{ prefix: '', thousands: '.', decimal: ',', allowNegative: false}">
+            </div>
+           
+            <div class="ui-g-12 ui-md-4 ui-fluid">
+                <label>Quatidade de Pessoas</label>
+                <input pInputText type="text">
+            </div>
+           
+          <div class="ui-g-12">
+            <button pButton type="submit" label="Realizar pagamento"></button>
+          </div> 
+    
+          <div class="ui-g-12 ui-md-1">
+                <button pButton type="submit" label="Salvar"></button>
+              </div> 
+ 
+          <div class="ui-g-11">
+            <button pButton type="button" label="Novo" class="ui-button-info" ></button>
+            <a href="javascript:;" class="a-espaco" routerLink="/reservas">Voltar para a pesquisa</a>
+          </div>
+          
+          </div>
+        </form>
+      </div>
+    
+
+

@@ -1,0 +1,54 @@
+<div class="container">
+    <form>
+    <div class="ui-g">
+  
+      <div class="ui-g-12">
+        <h1>Novo Registro</h1>
+      </div>
+
+      <div class="ui-g-12 ui-md-6 ui-fluid">
+        <label>Hóspede</label>
+        <p-dropdown [options]="tipo" placeholder="Flávio dos Santos Diniz"></p-dropdown>
+      </div>
+
+        <div class="ui-g-6 ui-md-4 ui-fluid">
+            <label>Data</label>
+            <p-calendar dateFormat="dd/mm/yy"></p-calendar>
+        </div>
+
+        <div class="ui-g-6 ui-md-2 ui-fluid">
+            <label>Hora</label>
+            <p-calendar dateFormat="dd/mm/yy"></p-calendar>
+        </div>
+
+        <div class="ui-g-12 ui-md-4 ui-fluid">
+            <label>Tipo de Registro</label>
+            <p-dropdown [options]="tipo" placeholder="Entrada"></p-dropdown>
+        </div>
+       
+        <div class="ui-g-12 ui-md-4 ui-fluid">
+            <label>Possui Veiculo</label>
+            <p-dropdown [options]="tipo" placeholder="Sim"></p-dropdown>
+        </div>
+       
+        <div class="ui-g-12 ui-md-4 ui-fluid">
+          <label>Anexar Imagem Placa</label>
+          <p-fileUpload name="myfile[]" url="./upload.php" multiple="multiple" accept="image/*"></p-fileUpload>
+        </div> 
+
+      <div class="ui-g-12 ui-md-1">
+            <button pButton type="submit" label="Salvar"></button>
+          </div> 
+
+      <div class="ui-g-9">
+        <button pButton type="button" label="Novo" class="ui-button-info" ></button>
+        <a href="javascript:;" class="a-espaco" routerLink="/registros">Voltar para a pesquisa</a>
+      </div>
+      
+      </div>
+    </form>
+  </div>
+
+
+
+

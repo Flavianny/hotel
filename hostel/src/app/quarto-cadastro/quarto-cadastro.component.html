@@ -1,0 +1,76 @@
+<div class="container">
+        <form>
+        <div class="ui-g">
+      
+          <div class="ui-g-12">
+            <h1>Novo Quarto</h1>
+          </div>
+    
+          <div class="ui-g-12 ui-md-4 ui-fluid">
+            <label>Numero</label>
+            <input pInputText type="text">
+          </div>
+    
+          <div class="ui-g-12 ui-md-4 ui-fluid">
+              <label>Disponibilidade</label>
+              <p-dropdown [options]="disponibilidade" placeholder="Selecione"></p-dropdown>
+          </div>
+
+            <div class="ui-g-12 ui-md-4 ui-fluid">
+                <label>Possui Vista</label>
+                <p-dropdown [options]="vista" placeholder="Sim"></p-dropdown>
+            </div>
+      
+            <div class="ui-g-12 ui-md-3 ui-fluid">
+                    <label>Cama</label>
+                    <p-dropdown [options]="vista" placeholder="Solteiro"></p-dropdown>
+            </div>
+
+            <div class="ui-g-12 ui-md-1 ui-fluid">
+                <label>Adicionar</label>
+                <button pButton type="submit" label="+"></button>
+            </div> 
+
+            <div class="ui-g-12 ui-md-3 ui-fluid">
+                <label>Equipamento</label>
+                <input pInputText type="text">  
+            </div>
+
+            <div class="ui-g-12 ui-md-1 ui-fluid">
+                <label>Adicionar</label>
+                <button pButton type="submit" label="+"></button>
+            </div> 
+
+            <div class="ui-g-12 ui-md-3 ui-fluid">
+                <label>Contém Figrobar</label>
+                <p-dropdown [options]="vista" placeholder="Sim"></p-dropdown>
+            </div>
+
+            <div class="ui-g-12 ui-md-1 ui-fluid">
+                <label>Adicionar</label>
+                <button pButton type="submit" label="Item"></button>
+            </div>
+
+            <div class="ui-g-12 ui-md-4 ui-fluid">
+                <label>Valor</label>
+                <input pInputText type="text" placeholder="0,00" currencyMask [options]="{ prefix: '', thousands: '.', decimal: ',', allowNegative: false}">
+            </div>
+
+            <div class="ui-g-12 ui-md-8 ui-fluid">
+                    <label>Anexar Foto</label>
+                    <p-fileUpload name="myfile[]" url="./upload.php" multiple="multiple"
+            accept="image/*"></p-fileUpload>
+                </div>
+
+          <div class="ui-g-12 ui-md-1">
+            <button pButton type="submit" label="Salvar"></button>
+          </div> 
+    
+          <div class="ui-g-11">
+            <button pButton type="button" label="Novo" class="ui-button-info"></button>
+            <a href="javascript:;" class="a-espaco" routerLink="/quartos">Voltar para a pesquisa</a>
+          </div>
+          
+          </div>
+        </form>
+      </div>

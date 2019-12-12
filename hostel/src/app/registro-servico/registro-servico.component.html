@@ -1,0 +1,44 @@
+<div class="container">
+    <form>
+    <div class="ui-g">
+  
+      <div class="ui-g-12">
+        <h1>Solicita Serviço</h1>
+      </div>
+
+      <div class="ui-g-12 ui-md-6 ui-fluid">
+        <label>Nº registro / Hóspede</label>
+        <p-dropdown [options]="tipo" placeholder="1 - Flávio dos Santos Diniz"></p-dropdown>
+      </div>
+
+        <div class="ui-g-6 ui-md-6 ui-fluid">
+            <label>Serviço</label>
+            <p-dropdown [options]="tipo" placeholder="Limpar Quarto"></p-dropdown>
+        </div>
+
+        <div class="ui-g-12 ui-md-6 ui-fluid">
+            <label>Status Serviço</label>
+            <p-dropdown [options]="tipo" placeholder="Realizado"></p-dropdown>
+          </div>
+
+        <div class="ui-g-12 ui-md-6 ui-fluid">
+            <label>Valor</label>
+            <input pInputText type="text" placeholder="0,00" currencyMask [options]="{ prefix: '', thousands: '.', decimal: ',', allowNegative: false}">
+        </div>
+              
+      <div class="ui-g-12 ui-md-1">
+            <button pButton type="submit" label="Salvar"></button>
+          </div> 
+
+      <div class="ui-g-11">
+        <button pButton type="button" label="Novo" class="ui-button-info" ></button>
+        <a href="javascript:;" class="a-espaco" routerLink="/servicos/solicita">Voltar para a pesquisa</a>
+      </div>
+      
+      </div>
+    </form>
+  </div>
+
+
+
+

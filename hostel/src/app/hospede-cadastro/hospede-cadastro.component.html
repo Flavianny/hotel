@@ -1,0 +1,51 @@
+<div class="container">
+        <form>
+        <div class="ui-g">
+      
+          <div class="ui-g-12">
+            <h1>Novo Hospede</h1>
+          </div>
+    
+          <div class="ui-g-12 ui-fluid">
+            <label>Nome</label>
+            <input pInputText type="text">
+          </div>
+    
+            <div class="ui-g-12 ui-md-9 ui-fluid">
+                <label>Email</label>
+                <input pInputText type="text">
+            </div>
+    
+            <div class="ui-g-12 ui-md-3 ui-fluid">
+                <label>Telefone</label>
+               <p-inputMask mask="(99) 99999-9999"></p-inputMask>
+            </div>
+    
+            <div class="ui-g-12 ui-md-4 ui-fluid">
+                <label>Senha</label>
+               <input pInputText type="text">
+            </div>
+    
+            <div class="ui-g-12 ui-md-4 ui-fluid">
+                <label>CPF</label>
+               <input pInputText type="text">
+            </div>
+           
+            <div class="ui-g-12 ui-md-4 ui-fluid">
+                <label>Estado Civil</label>
+                <p-dropdown [options]="estados" placeholder="Selecione"></p-dropdown>
+            </div>
+      
+          <div class="ui-g-1">
+            <button pButton type="submit" label="Salvar"></button>
+          </div> 
+    
+          <div class="ui-g-11">
+            <button pButton type="button" label="Novo" class="ui-button-info" ></button>
+            <a href="javascript:;" class="a-espaco" routerLink="/hospedes">Voltar para a pesquisa</a>
+          </div>
+          
+          </div>
+        </form>
+      </div>
+    

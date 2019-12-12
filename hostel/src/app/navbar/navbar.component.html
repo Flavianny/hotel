@@ -1,0 +1,44 @@
+<nav class="navbar">
+    <div class="container">
+        <div class="ui-g">
+            <div class="ui-g-12">
+                <a href="javascript:;" class="navbar-toogle" (click)="exibindoMenu = !exibindoMenu">
+                    <i class="pi pi-list"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <ul class="navbar-menu" [hidden]="!exibindoMenu">
+        <li class="navbar-usuario">Flávio Diniz</li>
+        <li class="navbar-menuitem">
+                <a routerLink="/dados/pessoais">Dados Pessoais</a>
+                </li>
+        <li class="navbar-menuitem">
+            <a routerLink="/funcionarios">Funcionarios</a>
+        </li>
+        <li class="navbar-menuitem">
+            <a routerLink="/hospedes">Hospedes</a>
+        </li>
+        <li class="navbar-menuitem">
+            <a routerLink="/inicio">Início</a>
+        </li>
+        <li class="navbar-menuitem">
+            <a routerLink="/quartos">Quartos</a>
+        </li>
+        <li class="navbar-menuitem">
+            <a routerLink="/registros">Registros</a>
+        </li>
+        <li class="navbar-menuitem">
+            <a routerLink="/reservas">Reservas</a>
+        </li>
+        <li class="navbar-menuitem">
+            <a routerLink="/servicos">Serviços</a>
+        </li>
+        <li class="navbar-menuitem">
+                <a href="#">Logout</a>
+            </li>
+    </ul>
+</nav>
+
+
